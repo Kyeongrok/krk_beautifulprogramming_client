@@ -7,21 +7,21 @@ import axios from 'axios'
 class App extends Component {
   componentWillMount(){
     console.log("hello");
-    axios.get({
-      url:'https://k3q0fbhd62.execute-api.ap-northeast-2.amazonaws.com/prod/greeting?name=kyeongrok',
-      headers:{
-        "Access-Control-Allow-Origin" : "*", // Required for CORS support to work
-        "Access-Control-Allow-Credentials" : true
-      }
-    })
-      .then(function (response) {
-        console.log('here');
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log('error');
-        console.log(error);
-      });
+    // axios.get({
+    //   url:'https://k3q0fbhd62.execute-api.ap-northeast-2.amazonaws.com/prod/greeting?name=kyeongrok',
+    //   headers:{
+    //     "Access-Control-Allow-Origin" : "*", // Required for CORS support to work
+    //     "Access-Control-Allow-Credentials" : true
+    //   }
+    // })
+    //   .then(function (response) {
+    //     console.log('here');
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log('error');
+    //     console.log(error);
+    //   });
   }
   render() {
     return (
